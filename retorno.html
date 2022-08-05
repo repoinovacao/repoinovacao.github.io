@@ -1,0 +1,56 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function() {
+            $("button").click(function() {
+                    const clientId = '78r82byagj089p';
+                    var code = window.location.search;
+                    var secret = prompt("Diga o segredo")
+                    if ( code != null && code != undefined ) {
+                        code = code.replace("?code=", '');
+                        console.log(code);
+                        var url = `https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&client_id=${clientId}&client_secret=${secret}&code=${code}&state=55811&redirect_uri=https://nogueiradalmeida.github.io/retorno.html`
+                        var windowObjectReference = window.open(url)
+                        console.log(windowObjectReference)
+                    }
+
+                    var access_token = "<<copie o access_token da outra aba e cole aqui>>"
+
+                    document.getElementById("req").textContent = 
+                    `GET https://api.linkedin.com/v2/me
+                     Content-Type: application/json
+                     Authorization: Bearer ${access_token}`
+                     
+                    
+                    
+            });
+    });
+</script>
+
+<button type="button">Carrega Token de Acesso</button>
+<br>
+<br>
+<textarea id="req" height="3000"></textarea>    
+<br>
+
+<script src='https://meet.jit.si/external_api.js'></script>
+
+<script>
+    const domain = 'meet.jit.si';
+    let numeroAleatorio = Math.round(Math.random() * 10000000000000000);
+    let sala = "atd" + numeroAleatorio;//ideia
+    console.log(sala);
+    const options = {
+        roomName: sala,
+        width: 700,
+        height: 700,
+        lang: 'pt'
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+    api.executeCommand('stopShareVideo');
+</script>
+
+
+
