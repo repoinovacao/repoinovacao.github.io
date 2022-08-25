@@ -363,10 +363,26 @@ const spheres = {
         images: [
             {
                 src: "#mapa_andar",
-                position: fromCylindrical(1.5, -70, 0),
+                //position: fromCylindrical(1.3, -70, 0),
+                position: fromCylindrical(0, -90, -1),
+                rotation: "-90 -5 0"
+                //animation: floatAnimationCylindrical(1.5, -70, 0)
+            },
+            {
+                src: "#placa-360",
+                position: fromCylindrical(1.8, -138, 0),
                 
-                animation: floatAnimationCylindrical(1.5, -70, 0)
+                //animation: floatAnimationCylindrical(1.3, -141, 0)
             }
+            ,
+            {
+                src: "#placa-clique-e-arraste",
+                rotation: "0 -80 0",
+                position: fromCylindrical(4.3, -39, 0),
+                
+                //animation: floatAnimationCylindrical(1.3, -141, 0)
+            }
+            
         ],
 
         
