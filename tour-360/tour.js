@@ -267,6 +267,16 @@ const spheres = {
               position: "7.9 1.2 -3.9", 
               rotation: "0 -110 0"
             }
+        ],
+        images: [
+            {
+                src: "#caminhao",
+                href: "https://ws.bndes.gov.br/canal-mpme/#/credito/proposta-dados-basicos",
+                position: fromCylindrical(4, -120, 0),
+                rotation: "0 50 0",
+                animation: floatAnimationCylindrical(4, -120, 0)
+
+            }
         ]
     },
     "sala-2004":{
