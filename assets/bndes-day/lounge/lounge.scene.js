@@ -39,7 +39,7 @@ export default {
         // },
         {
             src: '#speech',
-            scene: "#lounge-video",
+            scene: "#lounge",
             position: fromCylindrical(6, -80, 2.9),
             rotation: "0 0 0",
             animation: floatAnimationCylindrical(6, -80, 2.9),
