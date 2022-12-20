@@ -3,15 +3,15 @@ import { imagesArray, videosArray, textsArray } from "../asg/asg-comum.scene.js"
 
 export default {
     sky: {
-        src: '../assets/bndes-day/asg/asg.1920x960.mov',
-        rotation: "0 -105 0",
+        src: '../assets/360/asg/asg.1920x960.mp4',
+        rotation: "0 -95 0",
     },
     waypoints: [
         {
             src: '#fechar',
             scene: "#asg",
-            position: fromCylindrical(9, -75, 2.9),
-            animation: floatAnimationCylindrical(9, -75, 2.9)
+            position: fromCylindrical(9, -70, 2.4),
+            animation: floatAnimationCylindrical(9, -70, 2.4)
         },
     ],
 

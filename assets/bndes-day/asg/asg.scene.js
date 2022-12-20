@@ -4,8 +4,8 @@ import { imagesArray, videosArray, textsArray } from "../asg/asg-comum.scene.js"
 
 export default {
     sky: {
-        src: '../assets/bndes-day/asg/asg.jpg',
-        rotation: "0 -105 0",
+        src: '../assets/360/asg/asg.jpg',
+        rotation: "0 -95 0",
     },
     waypoints: [          
         {
@@ -17,9 +17,9 @@ export default {
         {
             src: '#speech',
             scene: "#asg-video",
-            position: fromCylindrical(5, -73, 2.2),
+            position: fromCylindrical(5, -70, 2.4),
             // rotation: "0 115 0",
-            animation: floatAnimationCylindrical(5, -73, 2.2),
+            animation: floatAnimationCylindrical(5, -70, 2.4),
         },    
     ],
 
