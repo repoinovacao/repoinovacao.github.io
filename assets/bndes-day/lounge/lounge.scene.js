@@ -95,18 +95,18 @@ export default {
             position: fromCylindrical(6, COLUNA_DA_DIREITA, LINHA_CENTRAL),
         },            
     ],
-    texts: [
-        {
-            value: "Gustavo Montezano\n PRESIDENTE DO BNDES",
-            rotation: "0 0 0",
-            position: fromCylindrical(6, COLUNA_DA_DIREITA + 9.25, LINHA_CENTRO_INFERIOR + .2),
-            color: "whitesmoke",
-            bgColor: Cores.BNDES_AZUL,
-            bgWidth: "3",
-            bgHeight: "1",
-            align: "center",
-        }
-    ],
+    // texts: [
+    //     {
+    //         value: "Gustavo Montezano\n PRESIDENTE DO BNDES",
+    //         rotation: "0 0 0",
+    //         position: fromCylindrical(6, COLUNA_DA_DIREITA + 9.25, LINHA_CENTRO_INFERIOR + .2),
+    //         color: "whitesmoke",
+    //         bgColor: Cores.BNDES_AZUL,
+    //         bgWidth: "3",
+    //         bgHeight: "1",
+    //         align: "center",
+    //     }
+    // ],
     images: [
         //  {
         //      // src: "../assets/bndes-day/mapa.jpg",
