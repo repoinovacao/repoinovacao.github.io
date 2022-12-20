@@ -1,8 +1,7 @@
 AFRAME.registerComponent('mouse-cursor', {
     init: function () {
         this.el.sceneEl.addEventListener("enter-vr", () => {
-            this.el.removeAttribute("cursor");
-
+            this.el.setAttribute("look-controls", "reverseMouseDrag: false");
             const cursor = document.createElement("a-cursor");
             cursor.setAttribute("animation__click", {
                 property: "scale",
@@ -32,10 +31,12 @@ AFRAME.registerComponent('mouse-cursor', {
             });
 
             this.el.appendChild(cursor);
+            this.el.setAttribute("cursor", "fuse: true")
         });
 
         this.el.sceneEl.addEventListener("exit-vr", () => {
             this.el.setAttribute("cursor", "rayOrigin", "mouse");
+            this.el.setAttribute("look-controls", "reverseMouseDrag: true");
 
             const cursors = this.el.getChildren().filter(c => c.localName == 'a-cursor');
             if (!cursors) return;

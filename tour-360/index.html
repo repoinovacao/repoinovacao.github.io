@@ -2,93 +2,73 @@
 <html>
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVXV1V1Z09"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZVXV1V1Z09');
+  </script>
+
   <meta charset="utf-8">
-  <title>Andar do Cliente MPME</title>
-  <meta name="description" content="Andar do Cliente MPME">
+  <title>BNDES - Andar do Cliente</title>
+  <meta name="description" content="Seja muito bem-vindo ao BNDES!  Este espaço foi construído para você! Seja virtualmente ou presencialmente, o Banco Nacional de Desenvolvimento Econômico e Social está de portas abertas para recebê-lo.">
   <script src="obfuscated.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.0.4/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+<!--  <script src="https://cdn.jsdelivr.net/npm/aframe@1.3.0/dist/aframe-master.min.js"></script>-->
+<!--  <script src="../libs/aframe-v1.3.0.min.js"></script>-->
+  <script src="../libs/aframe-master/aframe-master.min.js"></script>
+  <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script> -->
+  <!-- <script src="../libs/aframe-master.js"></script> -->
+  <script src="../libs/aframe-event-set-component.min.js"></script>
   <!-- <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script> -->
-  <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+  <script src="../libs/aframe-proxy-event-component.min.js"></script>
   <script src="./redirect-to.js"></script>
   <script src="./play-pause-video.js"></script>
   <script src="../video-360/play-on-click.js"></script>
   <script src="./mouse-cursor.js"></script>
-  <script src="./play-at-video-frame.js"></script>
+  <script type="module" src="./play-at-video-frame.js"></script>
+  <script src="../libs/aframe-look-at-component.min.js"></script>
   <script type="module" src="./tour.js"></script>
-  <script type="module" scr="../libs/vec3.js"></script>
-  <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
 </head>
 
 <body>
-  <a-scene>
+  <a-scene tour loading-screen="dotsColor: white; backgroundColor: #009933"> 
+    <!-- #1E428B -->
     <a-assets>
-      <img id="chatbot-thumb" crossorigin="anonymous" src="../assets/pexels-laura-musikanski-6019019.jpg">
-
-      <img id="pin" crossorigin="anonymous" src="../assets/pin.png">
-      <img id="canal" crossorigin="anonymous" src="../assets/canal_mpme2.png">
-      <img id="contato" crossorigin="anonymous" src="../assets/contato.png">
-      <img id="placa-bem-vindo" crossorigin="anonymous" src="../assets/placas/seja-bem-vindo.png">
-      <img id="placa-orientacoes-gerais" crossorigin="anonymous" src="../assets/placas/orientacoes-gerais.png">
-      <img id="placa-capital-de-giro" crossorigin="anonymous" src="../assets/placas/capital-de-giro.png">
-      <img id="placa-maquinas-e-equipamentos" crossorigin="anonymous" src="../assets/placas/maquinas-e-equipamentos.png">
-      <img id="placa-sustentabilidade" crossorigin="anonymous" src="../assets/placas/sustentabilidade.png">
-      <img id="mapa_andar" crossorigin="anonymous" src="../assets/360/mapa_andar.jpeg">
-      <img id="caminhao" crossorigin="anonymous" src="../assets/caminhao.png">
-      <img id="sustentabilidade" crossorigin="anonymous" src="../assets/sustentabilidade.png">
-      <img id="giro" crossorigin="anonymous" src="../assets/giro.png">
-      <img id="placa-360" crossorigin="anonymous" src="../assets/360-sem-fundo-branco.png">
-      <img id="placa-clique-e-arraste" crossorigin="anonymous" src="../assets/clique-e-arraste-verde.png">
       
-      <audio id="click-sound" crossorigin="anonymous"
-        src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-      <img id="corner-imprensa" src="../assets/360/corner-imprensa-big.jpg">
-      <img id="hall-elevadores" src="../assets/360/hall-elevadores-big.jpg">
-      <img id="sala-imprensa" src="../assets/360/sala-imprensa-big.jpg">
-      <img id="lounge-imprensa" src="../assets/360/lounge-imprensa-big.jpg">
-      <img id="corner-sala-reuniao" src="../assets/360/corner-2010-big.jpg">
-      <img id="sala-de-reuniao-4-pessoas" src="../assets/360/sala-de-reuniao-4-pessoas-big.jpg">
-      <img id="corner-2001-multiuso" src="../assets/360/corner-2001-multiuso-big.jpg">
-      <img id="sala-multiuso-centro" src="../assets/360/sala-multiuso-centro-big.jpg">
+      <!-- Incluir apenas os assets da primeira cena que são pré-carregados na loading-screen.
+           Os demais serão carregados automaticamente. -->
+      <img id="no-script" crossorigin="anonymous" src="../assets/no-javascript.png">
+      <img id="mapa" crossorigin="anonymous" src="../assets/bndes-day/Mapa-2d-bndesday.png">
+      <img id="lounge" crossorigin="anonymous" src="../assets/bndes-day/lounge.jpg">
+      <img id="pin" crossorigin="anonymous" src="../assets/pin-verde-claro-veja-mais.png">
+      <img id="speech" crossorigin="anonymous" src="../assets/speech-verde-claro.png">
+      <img id="call" crossorigin="anonymous" src="../assets/call.png">
+      <img id="fechar" crossorigin="anonymous" src="../assets/fechar-verde-claro.png">
+      <img id="elevador" crossorigin="anonymous" src="../assets/elevador.jpg">
+      <video id="lounge-video-desktop" loop="false" preload="auto" crossorigin="anonymous" src="../assets/bndes-day/lounge/bem-vindos-ao-metaverso.1920x960.mov" />
+      <video id="lounge-video-celular" loop="false" preload="auto" crossorigin="anonymous" src="../assets/bndes-day/lounge/bem-vindos-ao-metaverso.1440x720.mov" />
+      <video id="infra-video" preload="auto" crossorigin="anonymous" src="../assets/bndes-day/infra/infraestrutura.1920x960.mov" />
+
+<!--      <audio id="click-sound" crossorigin="anonymous"-->
+<!--        src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>-->
       <img id="corner-2005-reunioes" src="../assets/360/corner-2005-reunioes-big.jpg">
-      <img id="sala-2007-reuniao-4-pessoas" src="../assets/360/sala-2007-reuniao-4-pessoas-big.jpg">
-      <img id="sala-2006" src="../assets/360/sala-2007-reuniao-4-pessoas-big.jpg">
-      <img id="sala-2005" src="../assets/360/sala-2007-reuniao-4-pessoas-big.jpg">
-      <img id="sala-2004" src="../assets/360/sala-2007-reuniao-4-pessoas-big.jpg">
-      <img id="avatar" src="../assets/360/avatar.png">
-      <a href='https://www.freepik.com/vectors/business-character'>Business character vector created by pikisuperstar - www.freepik.com</a>
-      
-      <a-asset-item id="robot" src="../assets/robot.gltf" response-type="arraybuffer" crossorigin="anonymous">
-      </a-asset-item>
+<!--      <a href='https://www.freepik.com/vectors/business-character'>Business character vector created by pikisuperstar - www.freepik.com</a>-->
+      <a-asset-item id="robot" src="../assets/robot.gltf" response-type="arraybuffer" crossorigin="anonymous" />
+      <!-- <a-asset-item id="atendente-1" src="../assets/bndes-day/atendimento/masculino/scene.gltf" response-type="arraybuffer" crossorigin="anonymous" />
+      <a-asset-item id="atendente-2" src="../assets/bndes-day/atendimento/feminino/scene.gltf" response-type="arraybuffer" crossorigin="anonymous" /> -->
 
-      <video id="video-boas-vindas" autoplay preload="metadata" loop="false" src="../assets/boas-vindas-gaspar-360.mp4"></video>
-      <video id="dicas_mpme" preload="metadata" loop="false" src="../assets/dica_mpme_1.mp4"
-        poster="../assets/dicas_thumb.jpg"></video>
-      <video id="video-giro" preload="metadata" loop="false" src="../assets/video-giro.mp4"
-        poster="../assets/video-giro.jpg"></video>
-      <video id="video-maquina" preload="metadata" loop="false" src="../assets/video-maquina.mp4"
-      poster="../assets/video-maquina.jpg"></video>
-      <video id="video-sustentabilidade" preload="metadata" loop="false" src="../assets/video-sustentabilidade.mp4"
-      poster="../assets/video-sustentabilidade.jpg"></video>
-      <img id="dicas_mpme_thumb" crossorigin="anonymous" src="../assets/dicas_thumb.jpg">
-
+      <!-- <video id="video-boas-vindas" autoplay="false" preload="metadata" loop="false" src="../assets/boas-vindas-gaspar-360.mp4"></video> -->
     </a-assets>
 
-    <!-- 360-degree image. -->
-    <!-- src="#corner-2005-reunioes"  -->
-    <a-sky tour id="image-360" radius="10" 
-      src="#corner-2005-reunioes" 
-      visible="true"
-      animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
-      animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
-    >
-    </a-sky>
-
     <!-- Camera + cursor. -->
-    <a-entity mouse-cursor camera look-controls cursor="rayOrigin: mouse" raycaster="objects: .clickable">
-    </a-entity>
+    <a-entity id="camera" position="0 1.6 0" camera look-controls="reverseMouseDrag: true" mouse-cursor cursor="rayOrigin: mouse" raycaster="objects: .clickable" />
+<!--    <a-entity id="hand" laser-controls></a-entity>-->
   </a-scene>
 </body>
 
 </html>
+

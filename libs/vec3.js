@@ -516,6 +516,14 @@
       this.z *= m;
       return this;
     }
+
+    /**
+     * Inverts this vector - i.e. sets x = -x, y = -y and z = -z.
+     * @returns {Vec3} This vector.
+     */
+    negate() {
+      return this.scale(-1);
+    }
   
     /**
      * Rotates x-axis by phi.
@@ -578,5 +586,9 @@
       this.y -= a.y;
       this.z -= a.z;
       return this;
+    }
+
+    toString() {
+      return `${this.x} ${this.y} ${this.z}`;
     }
   }

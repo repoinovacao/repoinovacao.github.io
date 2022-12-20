@@ -2,4 +2,9 @@
 
 Instalação
 
-Para rodar localmente, pode utilizar o python -m SimpleHTTPServer
+Para subir um servidor HTTP estático, há algumas alternativas:
+ python -m SimpleHTTPServer 
+ ou
+ yarn start
+ ou
+ npm run start

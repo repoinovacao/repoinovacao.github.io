@@ -1,0 +1,11 @@
+Model Information:
+* title:	F_M_Business_01 GTAIV Ped HD Maryann Mason
+* source:	https://sketchfab.com/3d-models/f-m-business-01-gtaiv-ped-hd-maryann-mason-aa7867ca6eff471a90e54e02f9c192b5
+* author:	Tymurioz (https://sketchfab.com/Tymurioz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "F_M_Business_01 GTAIV Ped HD Maryann Mason" (https://sketchfab.com/3d-models/f-m-business-01-gtaiv-ped-hd-maryann-mason-aa7867ca6eff471a90e54e02f9c192b5) by Tymurioz (https://sketchfab.com/Tymurioz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
